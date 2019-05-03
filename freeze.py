@@ -52,6 +52,15 @@ def mail():
 def video():
     return render_template("video_communication.html")
 
+@app.route("/cluster.html")
+def cluster():
+    return render_template("cluster.html")
+
+
+@app.route("/claimant_list.html")
+def cl_list():
+    return render_template("claimant_list.html")
+
 from flask_frozen import Freezer
 
 freezer = Freezer(app)
